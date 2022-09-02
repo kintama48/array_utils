@@ -16,9 +16,9 @@ class ArrayUtils:
             return [max(c) for c in zip(*array)]
         if axis == 1:
             return [max(r) for r in array]
-	    
+
     @staticmethod
     def linspace(start, stop, num=50, endpoint=True):
-  	if endpoint:
-    	    return [start + x*(stop-start)/(num-1) for x in range(num)]
-  	return [start + x*(stop-start)/(num-1) for x in range(num-1)]
+        if endpoint:
+            return [start + x * (stop - start) / (num - 1) for x in range(num)]
+        return [start + x * (stop - start) / (num - 1) for x in range(num - 1)]
